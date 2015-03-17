@@ -374,8 +374,7 @@ class ExecutorService extends \Thread
      */
     public function run()
     {
-        // register autoloader
-        require 'vendor/autoload.php';
+        // todo: register autoloader here
         
         // set initial param values
         $this->return = null;
