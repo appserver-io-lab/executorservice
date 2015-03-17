@@ -72,7 +72,7 @@ class Request extends \Thread
     {
         $session = \AppserverIo\Lab\ExecutorService::__getEntity('session');
         $session->doSomething();
-        $session->set('ThreadId:' . $this->getThreadId(), md5(time()));
+        $session->set('ThreadId:' . $this->getThreadId(), $this->getThreadId());
     }
 }
 
